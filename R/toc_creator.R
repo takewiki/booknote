@@ -10,6 +10,7 @@ toc_creater <- function (path_Names,includeData=TRUE){
   if ( includeData == TRUE){
     add_data <- c('srcData','testData','demoData')
     path_Names <- c(path_Names,add_data)
+    #合并上述数据
   }
   lapply(path_Names,dir.create)
   return(TRUE)
